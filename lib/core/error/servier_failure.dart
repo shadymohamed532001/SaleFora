@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:smartsoil/core/error/app_status_codes.dart';
-import 'package:smartsoil/core/error/failuer.dart';
+import 'package:salefora/core/error/app_status_codes.dart';
+import 'package:salefora/core/error/failuer.dart';
 
 class ServerFailure extends Failure {
   ServerFailure(super.errMessage);

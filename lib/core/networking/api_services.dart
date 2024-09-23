@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:smartsoil/core/networking/end_boint.dart';
+import 'package:salefora/core/networking/end_boint.dart';
 
 class ApiServices {
   static Dio? _dio;
