@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:salefora/app.dart';
 import 'package:salefora/bloc_observer.dart.dart';
-import 'package:salefora/core%20copy/helper/local_services.dart';
-import 'package:salefora/core%20copy/networking/api_services.dart';
+import 'package:salefora/core/helper/local_services.dart';
+import 'package:salefora/core/networking/api_services.dart';
 import 'package:salefora/service_locator.dart';
 
 void main() async {
@@ -13,5 +14,5 @@ void main() async {
   ApiServices.init();
   await LocalServices.init();
   ServiceLocator().setUpServiceLocator();
-  runApp(const MyApp());
+  runApp(const SaleForaApp());
 }
