@@ -316,11 +316,11 @@
 "@passwordMustContainSpecialCharacter" : {},
 "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts" :"إستمتع بتجربة تسوق مميزة من خلال مجموعة كبيرة و متنوعة من المنتجات",
 "@Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts" :{},
-"Agreeto":"أوافق على",
+"Agreeto": " أوافق على",
 "@Agreeto":{},
-"PrivacyPolicyandTermsofUse":"سياسة الخصوصية و شروط الاستخدام",
+"PrivacyPolicyandTermsofUse":" سياسة الخصوصية و شروط الاستخدام",
 "@PrivacyPolicyandTermsofUse":{},
-"Ourown":"الخاص بنا",
+"Ourown":" الخاص بنا",
 "@Ourown":{}
 
 }

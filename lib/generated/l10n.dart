@@ -1734,20 +1734,20 @@ class S {
     );
   }
 
-  /// `Agree to`
+  /// `Agree to `
   String get Agreeto {
     return Intl.message(
-      'Agree to',
+      'Agree to ',
       name: 'Agreeto',
       desc: '',
       args: [],
     );
   }
 
-  /// `Privacy Policy and Terms of Use`
+  /// `Privacy Policy and Terms of Use `
   String get PrivacyPolicyandTermsofUse {
     return Intl.message(
-      'Privacy Policy and Terms of Use',
+      'Privacy Policy and Terms of Use ',
       name: 'PrivacyPolicyandTermsofUse',
       desc: '',
       args: [],

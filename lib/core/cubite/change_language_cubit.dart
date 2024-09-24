@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'change_language_state.dart'; // Assuming this is in a separate file
+import 'change_language_state.dart';
 
 class LocaleCubit extends Cubit<GenericCubitState<Locale>> {
   LocaleCubit() : super(GenericCubitState.empty()) {

@@ -11,4 +11,5 @@ class AppImageAssets {
   static const String moreIcon = 'assets/svg/more_icon.svg';
   static const String favoriteIcon = 'assets/svg/favorite_icon.svg';
   static const String ordersIcon = 'assets/svg/orders_icon.svg';
+  static const String back = 'assets/svg/back.svg';
 }

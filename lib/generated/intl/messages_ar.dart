@@ -22,15 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "Agreeto": MessageLookupByLibrary.simpleMessage("أوافق على"),
+        "Agreeto": MessageLookupByLibrary.simpleMessage(" أوافق على"),
         "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts":
             MessageLookupByLibrary.simpleMessage(
                 "إستمتع بتجربة تسوق مميزة من خلال مجموعة كبيرة و متنوعة من المنتجات"),
         "In": MessageLookupByLibrary.simpleMessage("داخل"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("فروعنا"),
-        "Ourown": MessageLookupByLibrary.simpleMessage("الخاص بنا"),
+        "Ourown": MessageLookupByLibrary.simpleMessage(" الخاص بنا"),
         "PrivacyPolicyandTermsofUse": MessageLookupByLibrary.simpleMessage(
-            "سياسة الخصوصية و شروط الاستخدام"),
+            " سياسة الخصوصية و شروط الاستخدام"),
         "addExercise": MessageLookupByLibrary.simpleMessage("إضافة تمرين"),
         "addMember": MessageLookupByLibrary.simpleMessage("إضافة عضو"),
         "addNewExercise":

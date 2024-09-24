@@ -4,6 +4,7 @@ import 'package:salefora/core/routing/routes.dart';
 import 'package:salefora/core/themaing/app_text_styles.dart';
 import 'package:salefora/feature/login/logic/cubit/login_cubit.dart';
 import 'package:salefora/feature/login/presentation/views/login_view.dart';
+import 'package:salefora/feature/login/presentation/views/otp_view.dart';
 
 class AppRoutes {
   static Route<dynamic>? onGenerateRoute(RouteSettings routeSettings) {
@@ -21,6 +22,14 @@ class AppRoutes {
           builder: (context) => BlocProvider(
             create: (context) => LoginCubit(),
             child: const LoginView(),
+          ),
+        );
+
+      case Routes.otpViewRoute:
+        return MaterialPageRoute(
+          builder: (context) => BlocProvider(
+            create: (context) => LoginCubit(),
+            child: const OtpView(),
           ),
         );
       default:

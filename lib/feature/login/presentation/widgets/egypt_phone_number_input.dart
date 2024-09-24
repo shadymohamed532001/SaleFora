@@ -11,42 +11,49 @@ class EgyptPhoneNumberInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: TextField(
-            controller: cubit.phoneController,
-            keyboardType: TextInputType.phone,
-            decoration: InputDecoration(
-              hintText: S.of(context).phoneNumber,
-              hintStyle: const TextStyle(color: Colors.grey),
-              filled: true,
-              fillColor: AppColors.gray6Color,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(8.0),
-                borderSide: BorderSide.none,
+    return Form(
+      key: cubit.formKey,
+      child: Row(
+        children: [
+          Expanded(
+            child: TextFormField(
+              textDirection:
+                  Localizations.localeOf(context).languageCode == 'en'
+                      ? TextDirection.rtl
+                      : TextDirection.ltr,
+              controller: cubit.phoneController,
+              keyboardType: TextInputType.phone,
+              decoration: InputDecoration(
+                hintText: S.of(context).phoneNumber,
+                hintStyle: const TextStyle(color: Colors.grey),
+                filled: true,
+                fillColor: AppColors.gray6Color,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                  borderSide: BorderSide.none,
+                ),
               ),
             ),
           ),
-        ),
-        const SizedBox(width: 10),
-        Container(
-          width: 66,
-          height: 56,
-          decoration: BoxDecoration(
-            color: AppColors.gray6Color,
-            borderRadius: BorderRadius.circular(8.0),
-          ),
-          child: Center(
-            child: Text(
-              "+20",
-              style: AppTextStyle.medium18.copyWith(
-                color: AppColors.gray7Color,
+          const SizedBox(width: 10),
+          Container(
+            width: 66,
+            height: 56,
+            decoration: BoxDecoration(
+              color: AppColors.gray6Color,
+              borderRadius: BorderRadius.circular(8.0),
+            ),
+            child: Center(
+              child: Text(
+                "+20",
+                style: AppTextStyle.medium18.copyWith(
+                  color: AppColors.gray7Color,
+                ),
               ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

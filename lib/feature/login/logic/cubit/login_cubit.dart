@@ -12,4 +12,6 @@ class LoginCubit extends Cubit<LoginState> {
   }
 
   final TextEditingController phoneController = TextEditingController();
+
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 }

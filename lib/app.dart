@@ -27,10 +27,7 @@ class SaleForaApp extends StatelessWidget {
 
           return MaterialApp(
             locale: context.watch<LocaleCubit>().state.data,
-            supportedLocales: const [
-              Locale('en', 'US'),
-              Locale('ar', 'EG'),
-            ],
+            supportedLocales: S.delegate.supportedLocales,
             localizationsDelegates: const [
               S.delegate,
               GlobalMaterialLocalizations.delegate,
