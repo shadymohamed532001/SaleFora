@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:salefora/core/cubite/change_language_cubit.dart';
-import 'package:salefora/core/cubite/generic_cubit_state.dart';
+import 'package:salefora/core/cubite/change_language_state.dart';
 import 'package:salefora/core/routing/app_routes.dart';
 
 import 'generated/l10n.dart';
