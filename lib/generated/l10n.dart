@@ -1763,6 +1763,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Please enter the OTP verification code`
+  String get PleaseentertheOTPverificationcode {
+    return Intl.message(
+      'Please enter the OTP verification code',
+      name: 'PleaseentertheOTPverificationcode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your verification code has been sent to`
+  String get Yourverificationcodehasbeensentto {
+    return Intl.message(
+      'Your verification code has been sent to',
+      name: 'Yourverificationcodehasbeensentto',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send again`
+  String get ResendOTP {
+    return Intl.message(
+      'Send again',
+      name: 'ResendOTP',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue`
+  String get continuation {
+    return Intl.message(
+      'Continue',
+      name: 'continuation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `It seems that you are a new user with us`
+  String get Itseemsthatyouareanewuserwithus {
+    return Intl.message(
+      'It seems that you are a new user with us',
+      name: 'Itseemsthatyouareanewuserwithus',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter the following data`
+  String get Pleaseenterthefollowingdata {
+    return Intl.message(
+      'Please enter the following data',
+      name: 'Pleaseenterthefollowingdata',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your name`
+  String get pleaseEnterName {
+    return Intl.message(
+      'Please enter your name',
+      name: 'pleaseEnterName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your email`
+  String get pleaseEnterEmail {
+    return Intl.message(
+      'Please enter your email',
+      name: 'pleaseEnterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `City`
+  String get City {
+    return Intl.message(
+      'City',
+      name: 'City',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message(
+      'Email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

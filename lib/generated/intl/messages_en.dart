@@ -23,14 +23,26 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Agreeto": MessageLookupByLibrary.simpleMessage("Agree to "),
+        "City": MessageLookupByLibrary.simpleMessage("City"),
         "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts":
             MessageLookupByLibrary.simpleMessage(
                 "Enjoy a unique shopping experience through a large and diverse range of products"),
         "In": MessageLookupByLibrary.simpleMessage("In"),
+        "Itseemsthatyouareanewuserwithus": MessageLookupByLibrary.simpleMessage(
+            "It seems that you are a new user with us"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("Our Branches"),
         "Ourown": MessageLookupByLibrary.simpleMessage("Ourown"),
+        "PleaseentertheOTPverificationcode":
+            MessageLookupByLibrary.simpleMessage(
+                "Please enter the OTP verification code"),
+        "Pleaseenterthefollowingdata": MessageLookupByLibrary.simpleMessage(
+            "Please enter the following data"),
         "PrivacyPolicyandTermsofUse": MessageLookupByLibrary.simpleMessage(
             "Privacy Policy and Terms of Use "),
+        "ResendOTP": MessageLookupByLibrary.simpleMessage("Send again"),
+        "Yourverificationcodehasbeensentto":
+            MessageLookupByLibrary.simpleMessage(
+                "Your verification code has been sent to"),
         "addExercise": MessageLookupByLibrary.simpleMessage("Add Exercise"),
         "addMember": MessageLookupByLibrary.simpleMessage("Add member"),
         "addNewExercise":
@@ -69,6 +81,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("Confirm password"),
+        "continuation": MessageLookupByLibrary.simpleMessage("Continue"),
         "count": MessageLookupByLibrary.simpleMessage("Count"),
         "createNewPassword":
             MessageLookupByLibrary.simpleMessage("Create new password"),
@@ -96,6 +109,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "done": MessageLookupByLibrary.simpleMessage("Done"),
         "dream": MessageLookupByLibrary.simpleMessage("Dream"),
         "editProfile": MessageLookupByLibrary.simpleMessage("Edit Profile"),
+        "email": MessageLookupByLibrary.simpleMessage("Email"),
         "endDate": MessageLookupByLibrary.simpleMessage("End Date"),
         "endDateCannotBeEmpty":
             MessageLookupByLibrary.simpleMessage("End Date cannot be empty"),
@@ -207,6 +221,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Please enter a URL"),
         "pleaseEnterAValidURL":
             MessageLookupByLibrary.simpleMessage("Please enter a valid URL"),
+        "pleaseEnterEmail":
+            MessageLookupByLibrary.simpleMessage("Please enter your email"),
+        "pleaseEnterName":
+            MessageLookupByLibrary.simpleMessage("Please enter your name"),
         "pleaseEnterYourPassword":
             MessageLookupByLibrary.simpleMessage("Please enter your password"),
         "pleaseEnterYourPhoneNumber": MessageLookupByLibrary.simpleMessage(

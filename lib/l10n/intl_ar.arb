@@ -321,6 +321,28 @@
 "PrivacyPolicyandTermsofUse":" سياسة الخصوصية و شروط الاستخدام",
 "@PrivacyPolicyandTermsofUse":{},
 "Ourown":" الخاص بنا",
-"@Ourown":{}
+"@Ourown":{},
+"PleaseentertheOTPverificationcode":"الرجاء أدخال رمز التحقق",
+"@PleaseentertheOTPverificationcode":{},
+"Yourverificationcodehasbeensentto" : "تم إرسال رمز التحقق الخاص بك إلى",
+"@Yourverificationcodehasbeensentto":{},
+"ResendOTP":"إرسل مرة أخرى",
+"@ResendOTP":{},
+"continuation":"استمرار",
+"@continuation":{},
+"Itseemsthatyouareanewuserwithus":"يبدو انك مستخدم جديدًا معنا",
+"@Itseemsthatyouareanewuserwithus":{},
+"Pleaseenterthefollowingdata":"الرجاء أدخال البيانات التالية",
+"@Pleaseenterthefollowingdata":{},
+"pleaseEnterName":"الرجاء أدخال الاسم",
+"@pleaseEnterName":{},
+"pleaseEnterEmail":"  البريد الالكتروني",
+"@pleaseEnterEmail":{},
+"City":"المدينة",
+"@City":{},
+"email":"البريد الالكتروني",
+"@email":{}
+
+
 
 }

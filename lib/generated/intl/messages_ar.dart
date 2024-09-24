@@ -23,14 +23,25 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Agreeto": MessageLookupByLibrary.simpleMessage(" أوافق على"),
+        "City": MessageLookupByLibrary.simpleMessage("المدينة"),
         "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts":
             MessageLookupByLibrary.simpleMessage(
                 "إستمتع بتجربة تسوق مميزة من خلال مجموعة كبيرة و متنوعة من المنتجات"),
         "In": MessageLookupByLibrary.simpleMessage("داخل"),
+        "Itseemsthatyouareanewuserwithus":
+            MessageLookupByLibrary.simpleMessage("يبدو انك مستخدم جديدًا معنا"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("فروعنا"),
         "Ourown": MessageLookupByLibrary.simpleMessage(" الخاص بنا"),
+        "PleaseentertheOTPverificationcode":
+            MessageLookupByLibrary.simpleMessage("الرجاء أدخال رمز التحقق"),
+        "Pleaseenterthefollowingdata": MessageLookupByLibrary.simpleMessage(
+            "الرجاء أدخال البيانات التالية"),
         "PrivacyPolicyandTermsofUse": MessageLookupByLibrary.simpleMessage(
             " سياسة الخصوصية و شروط الاستخدام"),
+        "ResendOTP": MessageLookupByLibrary.simpleMessage("إرسل مرة أخرى"),
+        "Yourverificationcodehasbeensentto":
+            MessageLookupByLibrary.simpleMessage(
+                "تم إرسال رمز التحقق الخاص بك إلى"),
         "addExercise": MessageLookupByLibrary.simpleMessage("إضافة تمرين"),
         "addMember": MessageLookupByLibrary.simpleMessage("إضافة عضو"),
         "addNewExercise":
@@ -63,6 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("تأكيد"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
+        "continuation": MessageLookupByLibrary.simpleMessage("استمرار"),
         "count": MessageLookupByLibrary.simpleMessage("العدد"),
         "createNewPassword":
             MessageLookupByLibrary.simpleMessage("إنشاء كلمة مرور جديدة"),
@@ -89,6 +101,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "dream": MessageLookupByLibrary.simpleMessage("Dream"),
         "editProfile":
             MessageLookupByLibrary.simpleMessage("تعديل الملف الشخصي"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
         "endDate": MessageLookupByLibrary.simpleMessage("تاريخ الانتهاء"),
         "enterTheOtp": MessageLookupByLibrary.simpleMessage("أدخل رمز التحقق"),
         "enterTheOtpCodeSentToYourWhatsappNumber":
@@ -194,6 +207,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("يرجى إدخال عنوان URL"),
         "pleaseEnterAValidURL":
             MessageLookupByLibrary.simpleMessage("يرجى إدخال عنوان URL صالح"),
+        "pleaseEnterEmail":
+            MessageLookupByLibrary.simpleMessage("  البريد الالكتروني"),
+        "pleaseEnterName":
+            MessageLookupByLibrary.simpleMessage("الرجاء أدخال الاسم"),
         "pleaseEnterYourPassword":
             MessageLookupByLibrary.simpleMessage("يرجى إدخال كلمة المرور"),
         "pleaseEnterYourPhoneNumber":

@@ -64,8 +64,8 @@ class LoginViewBody extends StatelessWidget {
                   EgyptPhoneNumberInput(
                     cubit: cubit,
                   ),
-                  const SizedBox(
-                    height: 300,
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height * 0.42,
                   ),
                   const TermsAndConditionsWidget(),
                   const SizedBox(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:salefora/core/themaing/app_colors.dart';
 import 'package:salefora/core/themaing/app_text_styles.dart';
 
 class CustomBottom extends StatelessWidget {
@@ -70,7 +71,10 @@ class CustomBottom extends StatelessWidget {
                 )
               : Text(
                   bottomtext,
-                  style: textBottomStyle ?? AppTextStyle.bold24,
+                  style: textBottomStyle ??
+                      AppTextStyle.bold24.copyWith(
+                        color: AppColors.whiteColor,
+                      ),
                 ),
         ),
       ),
