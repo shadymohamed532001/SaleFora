@@ -22,8 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Agreeto": MessageLookupByLibrary.simpleMessage("أوافق على"),
+        "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts":
+            MessageLookupByLibrary.simpleMessage(
+                "إستمتع بتجربة تسوق مميزة من خلال مجموعة كبيرة و متنوعة من المنتجات"),
         "In": MessageLookupByLibrary.simpleMessage("داخل"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("فروعنا"),
+        "Ourown": MessageLookupByLibrary.simpleMessage("الخاص بنا"),
+        "PrivacyPolicyandTermsofUse": MessageLookupByLibrary.simpleMessage(
+            "سياسة الخصوصية و شروط الاستخدام"),
         "addExercise": MessageLookupByLibrary.simpleMessage("إضافة تمرين"),
         "addMember": MessageLookupByLibrary.simpleMessage("إضافة عضو"),
         "addNewExercise":
@@ -36,23 +43,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "allMembers": MessageLookupByLibrary.simpleMessage("جميع الأعضاء"),
         "allOurGymBranches":
             MessageLookupByLibrary.simpleMessage("كل فروع الجيم الخاصة بنا"),
-        "areYouSureYouWantToDeleteThisExercise":
-            MessageLookupByLibrary.simpleMessage(
-                "هل أنت متأكد أنك تريد حذف هذا التمرين؟"),
         "areYouSureYouWantToLogOut": MessageLookupByLibrary.simpleMessage(
             "هل أنت متأكد أنك تريد تسجيل الخروج؟"),
         "awayFromYou": MessageLookupByLibrary.simpleMessage("بعيد عنك"),
-        "back": MessageLookupByLibrary.simpleMessage("ظهر"),
         "backToLogin":
             MessageLookupByLibrary.simpleMessage("العودة إلى تسجيل الدخول"),
         "benchPress": MessageLookupByLibrary.simpleMessage("تمرين الضغط"),
-        "biceps": MessageLookupByLibrary.simpleMessage("عضلة البايسبس"),
         "birthDate": MessageLookupByLibrary.simpleMessage("تاريخ الميلاد"),
         "branch": MessageLookupByLibrary.simpleMessage("الفرع"),
         "calories": MessageLookupByLibrary.simpleMessage("السعرات الحرارية"),
         "checkInsToday":
             MessageLookupByLibrary.simpleMessage("تسجيلات الدخول اليوم"),
-        "chest": MessageLookupByLibrary.simpleMessage("صدر"),
         "chestAndAbdominalExercises":
             MessageLookupByLibrary.simpleMessage("تمارين الصدر والبطن"),
         "chooseYourMemberShipType":
@@ -71,7 +72,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "days": MessageLookupByLibrary.simpleMessage("أيام"),
         "daysLeftForYourPackage":
             MessageLookupByLibrary.simpleMessage("الأيام المتبقية في باقتك"),
-        "deleteExercise": MessageLookupByLibrary.simpleMessage("حذف التمرين"),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
         "disable": MessageLookupByLibrary.simpleMessage("الغاء"),
         "displayNameCannotBeEmpty": MessageLookupByLibrary.simpleMessage(
@@ -131,7 +131,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "instructions": MessageLookupByLibrary.simpleMessage("التعليمات"),
         "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "lastSession": MessageLookupByLibrary.simpleMessage("الجلسة الأخيرة"),
-        "legs": MessageLookupByLibrary.simpleMessage("أرجل"),
         "location": MessageLookupByLibrary.simpleMessage("الموقع"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
@@ -183,7 +182,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("كلمات المرور ليست متطابقة"),
         "peopleInGymNow":
             MessageLookupByLibrary.simpleMessage("الأشخاص في النادي الآن"),
-        "phoneNumber": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
+        "phoneNumber":
+            MessageLookupByLibrary.simpleMessage("رقم الهاتف الخاص بك"),
         "phoneNumberMustBe11DigitsLong": MessageLookupByLibrary.simpleMessage(
             "رقم الهاتف يجب أن يكون طوله 11 رقمًا"),
         "phoneNumberMustStartWith01": MessageLookupByLibrary.simpleMessage(
@@ -202,7 +202,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "recentlyScanned":
             MessageLookupByLibrary.simpleMessage("تم المسح مؤخرًا"),
         "repetition": MessageLookupByLibrary.simpleMessage("التكرار"),
-        "rest": MessageLookupByLibrary.simpleMessage("عضلة الساعد"),
         "result": MessageLookupByLibrary.simpleMessage("النتيجة"),
         "save": MessageLookupByLibrary.simpleMessage("حفظ"),
         "scanTheQrCode":
@@ -223,7 +222,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "sessionRemaining":
             MessageLookupByLibrary.simpleMessage("الجلسة المتبقية"),
         "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
-        "shoulders": MessageLookupByLibrary.simpleMessage("أكتاف"),
         "silver": MessageLookupByLibrary.simpleMessage("فضي"),
         "specialSymbolsSuchAs": MessageLookupByLibrary.simpleMessage(
             "رموز خاصة مثل (!, @, #, \$, %, ^, &, *)"),
@@ -245,7 +243,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "trainee": MessageLookupByLibrary.simpleMessage("متدرب"),
         "traineeClickHere":
             MessageLookupByLibrary.simpleMessage("متدرب؟ اضغط هنا"),
-        "triceps": MessageLookupByLibrary.simpleMessage("عضلة الترايسبس"),
         "trustedUser": MessageLookupByLibrary.simpleMessage("مستخدم موثوق"),
         "tryAgainLater":
             MessageLookupByLibrary.simpleMessage("حاول مرة أخرى لاحقًا"),

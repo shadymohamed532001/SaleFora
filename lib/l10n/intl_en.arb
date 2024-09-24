@@ -6,7 +6,7 @@
     "@gym":{},
     "fitnessTailoredJustForYou":"Fitness tailored just for you",
     "@fitnessTailoredJustForYou":{},
-    "phoneNumber": "Phone number",
+    "phoneNumber": "Your phone number",
     "@phoneNumber":{},
     "password":"Password",
     "@password":{},
@@ -333,7 +333,15 @@
     "passwordMustContainDigit":"Password must contain a digit",
     "@passwordMustContainDigit":{},
     "passwordMustContainSpecialCharacter" : "Password must contain a special character",
-    "@passwordMustContainSpecialCharacter" : {}
+    "@passwordMustContainSpecialCharacter" : {},
+    "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts" :"Enjoy a unique shopping experience through a large and diverse range of products",
+    "@Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts" :{},
+    "Agreeto":"Agree to",
+    "@Agreeto":{},
+    "PrivacyPolicyandTermsofUse":"Privacy Policy and Terms of Use",
+    "@PrivacyPolicyandTermsofUse":{},
+    "Ourown":"Ourown",
+    "@Ourown":{}
 
 
 }

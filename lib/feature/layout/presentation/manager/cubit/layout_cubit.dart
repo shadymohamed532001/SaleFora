@@ -1,4 +1,3 @@
-import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:salefora/feature/layout/data/models/change_index_params.dart';
@@ -57,6 +56,6 @@ class LayoutCubit extends Cubit<LayoutState> {
   void changeBottomNavToHome(BuildContext context) {
     currentIndex = 0;
 
-    emit(const ChangeBottomNavToHome());
+    emit(ChangeBottomNavToHome());
   }
 }

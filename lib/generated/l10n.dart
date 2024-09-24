@@ -80,10 +80,10 @@ class S {
     );
   }
 
-  /// `Phone number`
+  /// `Your phone number`
   String get phoneNumber {
     return Intl.message(
-      'Phone number',
+      'Your phone number',
       name: 'phoneNumber',
       desc: '',
       args: [],
@@ -1717,6 +1717,48 @@ class S {
     return Intl.message(
       'Password must contain a special character',
       name: 'passwordMustContainSpecialCharacter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enjoy a unique shopping experience through a large and diverse range of products`
+  String
+      get Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts {
+    return Intl.message(
+      'Enjoy a unique shopping experience through a large and diverse range of products',
+      name:
+          'Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Agree to`
+  String get Agreeto {
+    return Intl.message(
+      'Agree to',
+      name: 'Agreeto',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy and Terms of Use`
+  String get PrivacyPolicyandTermsofUse {
+    return Intl.message(
+      'Privacy Policy and Terms of Use',
+      name: 'PrivacyPolicyandTermsofUse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ourown`
+  String get Ourown {
+    return Intl.message(
+      'Ourown',
+      name: 'Ourown',
       desc: '',
       args: [],
     );
