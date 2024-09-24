@@ -18,8 +18,14 @@ class AppTextStyle {
 // medium16
   static const medium16 = TextStyle(
     fontFamily: 'Tajawal',
-    fontWeight: FontWeight.w500, // Medium
+    fontWeight: FontWeight.w500,
     fontSize: 16,
+  );
+  // medium16
+  static const medium15 = TextStyle(
+    fontFamily: 'Tajawal',
+    fontWeight: FontWeight.w500,
+    fontSize: 15,
   );
 
 // medium18

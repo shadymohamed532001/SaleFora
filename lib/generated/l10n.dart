@@ -80,10 +80,10 @@ class S {
     );
   }
 
-  /// `Phone number`
+  /// `Your phone number`
   String get phoneNumber {
     return Intl.message(
-      'Phone number',
+      'Your phone number',
       name: 'phoneNumber',
       desc: '',
       args: [],
@@ -1717,6 +1717,148 @@ class S {
     return Intl.message(
       'Password must contain a special character',
       name: 'passwordMustContainSpecialCharacter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enjoy a unique shopping experience through a large and diverse range of products`
+  String
+      get Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts {
+    return Intl.message(
+      'Enjoy a unique shopping experience through a large and diverse range of products',
+      name:
+          'Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Agree to `
+  String get Agreeto {
+    return Intl.message(
+      'Agree to ',
+      name: 'Agreeto',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy and Terms of Use `
+  String get PrivacyPolicyandTermsofUse {
+    return Intl.message(
+      'Privacy Policy and Terms of Use ',
+      name: 'PrivacyPolicyandTermsofUse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ourown`
+  String get Ourown {
+    return Intl.message(
+      'Ourown',
+      name: 'Ourown',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter the OTP verification code`
+  String get PleaseentertheOTPverificationcode {
+    return Intl.message(
+      'Please enter the OTP verification code',
+      name: 'PleaseentertheOTPverificationcode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your verification code has been sent to`
+  String get Yourverificationcodehasbeensentto {
+    return Intl.message(
+      'Your verification code has been sent to',
+      name: 'Yourverificationcodehasbeensentto',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send again`
+  String get ResendOTP {
+    return Intl.message(
+      'Send again',
+      name: 'ResendOTP',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue`
+  String get continuation {
+    return Intl.message(
+      'Continue',
+      name: 'continuation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `It seems that you are a new user with us`
+  String get Itseemsthatyouareanewuserwithus {
+    return Intl.message(
+      'It seems that you are a new user with us',
+      name: 'Itseemsthatyouareanewuserwithus',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter the following data`
+  String get Pleaseenterthefollowingdata {
+    return Intl.message(
+      'Please enter the following data',
+      name: 'Pleaseenterthefollowingdata',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your name`
+  String get pleaseEnterName {
+    return Intl.message(
+      'Please enter your name',
+      name: 'pleaseEnterName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your email`
+  String get pleaseEnterEmail {
+    return Intl.message(
+      'Please enter your email',
+      name: 'pleaseEnterEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `City`
+  String get City {
+    return Intl.message(
+      'City',
+      name: 'City',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message(
+      'Email',
+      name: 'email',
       desc: '',
       args: [],
     );
