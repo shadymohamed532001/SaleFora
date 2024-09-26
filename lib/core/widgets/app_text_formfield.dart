@@ -70,15 +70,24 @@ class AppTextFormFiled extends StatelessWidget {
             errorStyle: AppTextStyle.regular14.copyWith(
               color: AppColors.redColor,
             ),
-            suffixIcon: suffixIcon,
-            prefixIcon: Padding(
-              padding: const EdgeInsetsDirectional.only(end: 10, start: 21),
-              child: SizedBox(
-                width: 24,
-                height: 24,
-                child: prefixIcon,
-              ),
-            ),
+            suffixIcon: suffixIcon == null
+                ? null
+                : Padding(
+                    padding:
+                        const EdgeInsetsDirectional.only(start: 10, end: 10),
+                    child: suffixIcon,
+                  ),
+            prefixIcon: prefixIcon == null
+                ? null
+                : Padding(
+                    padding:
+                        const EdgeInsetsDirectional.only(end: 10, start: 21),
+                    child: SizedBox(
+                      width: 24,
+                      height: 24,
+                      child: prefixIcon,
+                    ),
+                  ),
             filled: filled ?? true,
             fillColor: fillColor ?? AppColors.gray10Color,
             enabledBorder: OutlineInputBorder(

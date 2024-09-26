@@ -3,15 +3,16 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:salefora/core/themaing/app_colors.dart';
 import 'package:salefora/core/themaing/app_text_styles.dart';
+import 'package:salefora/generated/l10n.dart';
 
-class CountdownTimer extends StatefulWidget {
-  const CountdownTimer({super.key});
+class SendAgainWidget extends StatefulWidget {
+  const SendAgainWidget({super.key});
 
   @override
-  State<CountdownTimer> createState() => _CountdownTimerState();
+  State<SendAgainWidget> createState() => _SendAgainWidgetState();
 }
 
-class _CountdownTimerState extends State<CountdownTimer> {
+class _SendAgainWidgetState extends State<SendAgainWidget> {
   late Timer _timer;
   int _start = 80;
 
@@ -55,31 +56,38 @@ class _CountdownTimerState extends State<CountdownTimer> {
     double progress = _start / 119;
 
     return Center(
-      child: GestureDetector(
-        onTap: resetTimer,
-        child: Row(
-          children: [
-            Text(
-              '$minutes:$seconds',
+      child: Row(
+        children: [
+          GestureDetector(
+            onTap: resetTimer,
+            child: Text(
+              S.of(context).ResendOTP,
               style: AppTextStyle.bold14.copyWith(
                 color: AppColors.primaryThirdColor,
               ),
             ),
-            const SizedBox(width: 6),
-            SizedBox(
-              width: 15,
-              height: 15,
-              child: CircularProgressIndicator(
-                value: progress,
-                strokeWidth: 2,
-                backgroundColor: Colors.grey.withOpacity(0.3),
-                valueColor: const AlwaysStoppedAnimation<Color>(
-                  AppColors.primaryColor,
-                ),
+          ),
+          const Spacer(),
+          Text(
+            '$minutes:$seconds',
+            style: AppTextStyle.bold14.copyWith(
+              color: AppColors.primaryThirdColor,
+            ),
+          ),
+          const SizedBox(width: 6),
+          SizedBox(
+            width: 15,
+            height: 15,
+            child: CircularProgressIndicator(
+              value: progress,
+              strokeWidth: 2,
+              backgroundColor: Colors.grey.withOpacity(0.3),
+              valueColor: const AlwaysStoppedAnimation<Color>(
+                AppColors.primaryColor,
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

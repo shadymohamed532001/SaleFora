@@ -6,7 +6,7 @@ import 'package:salefora/core/themaing/app_colors.dart';
 import 'package:salefora/core/themaing/app_image_assets.dart';
 import 'package:salefora/core/themaing/app_text_styles.dart';
 import 'package:salefora/core/widgets/app_bottom.dart';
-import 'package:salefora/feature/login/presentation/widgets/countdown_timer.dart';
+import 'package:salefora/feature/login/presentation/widgets/send_again_widget.dart';
 import 'package:salefora/feature/login/presentation/widgets/otp_form.dart';
 import 'package:salefora/generated/l10n.dart';
 
@@ -62,18 +62,7 @@ class OtpViewBody extends StatelessWidget {
             const SizedBox(
               height: 24,
             ),
-            Row(
-              children: [
-                Text(
-                  S.of(context).ResendOTP,
-                  style: AppTextStyle.bold14.copyWith(
-                    color: AppColors.primaryThirdColor,
-                  ),
-                ),
-                const Spacer(),
-                const CountdownTimer(),
-              ],
-            ),
+            const SendAgainWidget(),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.42,
             ),
