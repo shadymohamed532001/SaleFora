@@ -47,7 +47,21 @@ class _CitySelectionBottomSheetState extends State<CitySelectionBottomSheet>
 
   @override
   void initState() {
+    _initController();
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  void _initController() {
+    _animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 400),
+    );
   }
 
   @override
