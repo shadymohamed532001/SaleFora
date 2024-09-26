@@ -8,6 +8,8 @@ import 'package:salefora/core/widgets/app_bottom.dart';
 import 'package:salefora/core/widgets/app_text_formfield.dart';
 import 'package:salefora/generated/l10n.dart';
 
+import '../widgets/select_city_bottom_sheet.dart';
+
 class LoginNewUser extends StatelessWidget {
   const LoginNewUser({super.key});
 
@@ -118,9 +120,14 @@ class LoginNewUserBody extends StatelessWidget {
               fillColor: AppColors.gray10Color,
               filled: true,
               obscureText: false,
-              prefixIcon: SvgPicture.asset(
-                AppImageAssets.roadMap,
-                color: AppColors.gray7Color,
+              prefixIcon: GestureDetector(
+                onTap: () {
+                  SelectCityBottomSheet.show(context: context);
+                },
+                child: SvgPicture.asset(
+                  AppImageAssets.roadMap,
+                  color: AppColors.gray7Color,
+                ),
               ),
               keyboardType: TextInputType.phone,
               maxLine: 1,
