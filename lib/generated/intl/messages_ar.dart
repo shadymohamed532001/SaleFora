@@ -39,6 +39,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "PrivacyPolicyandTermsofUse": MessageLookupByLibrary.simpleMessage(
             " سياسة الخصوصية و شروط الاستخدام"),
         "ResendOTP": MessageLookupByLibrary.simpleMessage("إرسل مرة أخرى"),
+        "Sections": MessageLookupByLibrary.simpleMessage("الاقسام"),
+        "Youcansearchfromhere":
+            MessageLookupByLibrary.simpleMessage("يمكنك البحث من هنا"),
         "Yourverificationcodehasbeensentto":
             MessageLookupByLibrary.simpleMessage(
                 "تم إرسال رمز التحقق الخاص بك إلى"),
@@ -138,7 +141,7 @@ class MessageLookup extends MessageLookupByLibrary {
                 "مرحبًا، نذكرك بتغيير كلمة المرور الخاصة بك."),
         "highCapacity": MessageLookupByLibrary.simpleMessage("سعة عالية"),
         "history": MessageLookupByLibrary.simpleMessage("التاريخ"),
-        "home": MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "hours": MessageLookupByLibrary.simpleMessage("ساعات"),
         "id": MessageLookupByLibrary.simpleMessage("الرقم التعريفي"),
         "instructions": MessageLookupByLibrary.simpleMessage("التعليمات"),

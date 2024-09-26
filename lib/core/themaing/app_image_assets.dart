@@ -13,4 +13,6 @@ class AppImageAssets {
   static const String ordersIcon = 'assets/svg/orders_icon.svg';
   static const String back = 'assets/svg/back.svg';
   static const String close = 'assets/svg/close.svg';
+  static const String notification = 'assets/svg/notificationbing.svg';
+  static const String shoppingCart = 'assets/svg/shoppingcart.svg';
 }

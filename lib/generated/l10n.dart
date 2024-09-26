@@ -1863,6 +1863,26 @@ class S {
       args: [],
     );
   }
+
+  /// `You can search from here`
+  String get Youcansearchfromhere {
+    return Intl.message(
+      'You can search from here',
+      name: 'Youcansearchfromhere',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sections`
+  String get Sections {
+    return Intl.message(
+      'Sections',
+      name: 'Sections',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:salefora/core/helper/naviagtion_extentaions.dart';
 import 'package:salefora/core/helper/validators_helper.dart';
@@ -76,7 +77,12 @@ class LoginNewUserBody extends StatelessWidget {
                   padding: const EdgeInsetsDirectional.only(
                     end: 6,
                   ),
-                  child: SvgPicture.asset(AppImageAssets.personIcon),
+                  child: Transform.scale(
+                    scale: 0.5.sp,
+                    child: SvgPicture.asset(
+                      AppImageAssets.personIcon,
+                    ),
+                  ),
                 ),
               ),
               filled: true,
@@ -95,10 +101,12 @@ class LoginNewUserBody extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             AppTextFormFiled(
-              // controller: cubit.iDController,
               fillColor: AppColors.gray10Color,
-              prefixIcon: SvgPicture.asset(
-                AppImageAssets.atOutline,
+              prefixIcon: Transform.scale(
+                scale: 0.5.sp,
+                child: SvgPicture.asset(
+                  AppImageAssets.atOutline,
+                ),
               ),
               filled: true,
               hintText: S.of(context).pleaseEnterEmail,
@@ -117,7 +125,6 @@ class LoginNewUserBody extends StatelessWidget {
             const SizedBox(height: 8),
             AppTextFormFiled(
               readOnly: true,
-              // controller: cubit.iDController,
               hintText: S.of(context).City,
               fillColor: AppColors.gray10Color,
               filled: true,
@@ -126,9 +133,12 @@ class LoginNewUserBody extends StatelessWidget {
                 onTap: () {
                   SelectCityBottomSheet.show(context: context);
                 },
-                child: SvgPicture.asset(
-                  AppImageAssets.roadMap,
-                  color: AppColors.gray7Color,
+                child: Transform.scale(
+                  scale: 0.5.sp,
+                  child: SvgPicture.asset(
+                    AppImageAssets.roadMap,
+                    color: AppColors.gray7Color,
+                  ),
                 ),
               ),
               keyboardType: TextInputType.phone,
@@ -137,13 +147,16 @@ class LoginNewUserBody extends StatelessWidget {
                 return MyValidatorsHelper.idValidator(context, text);
               },
             ),
-            SizedBox(height: MediaQuery.of(context).size.height * 0.3),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.25),
             CustomBottom(
               backgroundColor: AppColors.primaryColor,
               onPressed: () {
                 context.navigateTo(routeName: Routes.layOutViewsRoute);
               },
               bottomtext: S.of(context).continuation,
+            ),
+            const SizedBox(
+              height: 40,
             ),
           ],
         ),

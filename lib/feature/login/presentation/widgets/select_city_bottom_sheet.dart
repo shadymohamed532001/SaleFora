@@ -141,8 +141,11 @@ class _CitySelectionBottomSheetState extends State<CitySelectionBottomSheet>
                     obscureText: false,
                     fillColor: AppColors.gray10Color,
                     filled: true,
-                    suffixIcon: SvgPicture.asset(
-                      AppImageAssets.searchNormal,
+                    suffixIcon: Transform.scale(
+                      scale: 0.5.sp,
+                      child: SvgPicture.asset(
+                        AppImageAssets.searchNormal,
+                      ),
                     ),
                   ),
                   SizedBox(height: 32.h),

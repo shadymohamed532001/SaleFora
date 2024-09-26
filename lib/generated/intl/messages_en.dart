@@ -40,6 +40,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "PrivacyPolicyandTermsofUse": MessageLookupByLibrary.simpleMessage(
             "Privacy Policy and Terms of Use "),
         "ResendOTP": MessageLookupByLibrary.simpleMessage("Send again"),
+        "Sections": MessageLookupByLibrary.simpleMessage("Sections"),
+        "Youcansearchfromhere":
+            MessageLookupByLibrary.simpleMessage("You can search from here"),
         "Yourverificationcodehasbeensentto":
             MessageLookupByLibrary.simpleMessage(
                 "Your verification code has been sent to"),

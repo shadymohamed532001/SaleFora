@@ -118,7 +118,7 @@
 "@sessionCompleted":{},
 "sessionRemaining":"الجلسة المتبقية",
 "@sessionRemaining":{},
-"home":"الصفحة الرئيسية",
+"home":"الرئيسية",
 "@home":{},
 "history":"التاريخ",
 "@history":{},
@@ -341,7 +341,11 @@
 "City":"المدينة",
 "@City":{},
 "email":"البريد الالكتروني",
-"@email":{}
+"@email":{},
+"Youcansearchfromhere" : "يمكنك البحث من هنا",
+"@Youcansearchfromhere" : {},
+"Sections":"الاقسام",
+"@Sections":{}
 
 
 
