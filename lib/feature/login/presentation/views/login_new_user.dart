@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:salefora/core/helper/naviagtion_extentaions.dart';
 import 'package:salefora/core/helper/validators_helper.dart';
+import 'package:salefora/core/routing/routes.dart';
 import 'package:salefora/core/themaing/app_colors.dart';
 import 'package:salefora/core/themaing/app_image_assets.dart';
 import 'package:salefora/core/themaing/app_text_styles.dart';
@@ -138,7 +140,9 @@ class LoginNewUserBody extends StatelessWidget {
             SizedBox(height: MediaQuery.of(context).size.height * 0.3),
             CustomBottom(
               backgroundColor: AppColors.primaryColor,
-              onPressed: () {},
+              onPressed: () {
+                context.navigateTo(routeName: Routes.layOutViewsRoute);
+              },
               bottomtext: S.of(context).continuation,
             ),
           ],

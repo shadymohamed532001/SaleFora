@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:salefora/core/cubite/change_language_cubit.dart';
 import 'package:salefora/core/cubite/change_language_state.dart';
 import 'package:salefora/core/routing/app_routes.dart';
+import 'package:salefora/core/themaing/app_colors.dart';
 
 import 'generated/l10n.dart';
 
@@ -33,6 +34,7 @@ class SaleForaApp extends StatelessWidget {
                 GlobalWidgetsLocalizations.delegate,
                 GlobalCupertinoLocalizations.delegate,
               ],
+              theme: ThemeData(scaffoldBackgroundColor: AppColors.whiteColor),
               debugShowCheckedModeBanner: false,
               onGenerateRoute: AppRoutes.onGenerateRoute,
             );

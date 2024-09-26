@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:salefora/core/routing/routes.dart';
 import 'package:salefora/core/themaing/app_text_styles.dart';
+import 'package:salefora/feature/layout/presentation/manager/cubit/layout_cubit.dart';
+import 'package:salefora/feature/layout/presentation/pages/layout_views.dart';
 import 'package:salefora/feature/login/logic/cubit/login_cubit.dart';
 import 'package:salefora/feature/login/presentation/views/login_new_user.dart';
 import 'package:salefora/feature/login/presentation/views/login_view.dart';
 import 'package:salefora/feature/login/presentation/views/otp_view.dart';
+import 'package:salefora/service_locator.dart';
 
 class AppRoutes {
   static Route<dynamic>? onGenerateRoute(RouteSettings routeSettings) {
@@ -18,6 +21,13 @@ class AppRoutes {
           ),
         );
 
+      case Routes.layOutViewsRoute:
+        return MaterialPageRoute(
+          builder: (context) => BlocProvider(
+            create: (context) => serviceLocator.get<LayoutCubit>(),
+            child: const LayOutViews(),
+          ),
+        );
       case Routes.loginViewRoute:
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
