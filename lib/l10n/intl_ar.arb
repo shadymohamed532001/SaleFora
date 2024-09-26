@@ -345,7 +345,28 @@
 "Youcansearchfromhere" : "يمكنك البحث من هنا",
 "@Youcansearchfromhere" : {},
 "Sections":"الاقسام",
-"@Sections":{}
+"@Sections":{},
+"Showmore": "عرض المزيد",
+"@Showmore":{},
+"menswear": "ملابس رجالية",
+"@menswear":{},
+"womenwear": "ملابس نساء",
+"@womenwear":{},
+"Childrenclothing": "ملابس الاطفال",
+"@Childrenclothing":{},
+"babywear": "ملابس الاطفال",
+"sportswear": "ملابس رياضية",
+"@sportswear":{},
+"Perfumes": "العطور",
+"@Perfumes":{},
+"accessories": "الاكسسوارات",
+"@accessories":{},
+"Discounts": "الخصومات",
+"@Discounts":{}
+
+
+
+
 
 
 

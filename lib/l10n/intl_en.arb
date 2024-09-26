@@ -365,7 +365,26 @@
     "Youcansearchfromhere":"You can search from here",
     "@Youcansearchfromhere":{},
     "Sections":"Sections",
-    "@Sections":{}
+    "@Sections":{},
+    "Showmore":"Show more",
+    "@Showmore":{},
+    "menswear":"Menswear",
+    "@menswear":{},
+    "womenswear":"Womenswear",
+    "@womenswear":{},
+    "Childrenclothing":"Childrenclothing",
+    "@Childrenclothing":{},
+    "babywear":"Babywear",
+    "@babywear":{},
+    "sportswear":"Sportswear",
+    "@sportswear":{},
+    "Perfumes":"Perfumes",
+    "@Perfumes":{},
+    "accessories":"Accessories",
+    "@accessories":{},
+    "Discounts":"Discounts",
+    "@Discounts":{}
+
 
   
   

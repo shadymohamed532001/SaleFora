@@ -15,4 +15,12 @@ class AppImageAssets {
   static const String close = 'assets/svg/close.svg';
   static const String notification = 'assets/svg/notificationbing.svg';
   static const String shoppingCart = 'assets/svg/shoppingcart.svg';
+  static const String childrenClothes = 'assets/images/children_clothes.png';
+  static const String accessories = 'assets/images/accessories.png';
+  static const String menClothes = 'assets/images/men_clothes.png';
+  static const String sportClothes = 'assets/images/sport_clothes.png';
+  static const String womenClothes = 'assets/images/women_clothes.png';
+  static const String perfumes = 'assets/images/perfumes.png';
+  static const String banner1 = 'assets/images/banner_1.png';
+  static const String banner2 = 'assets/images/bannar_2.png';
 }

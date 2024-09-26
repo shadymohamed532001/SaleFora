@@ -23,7 +23,10 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Agreeto": MessageLookupByLibrary.simpleMessage(" أوافق على"),
+        "Childrenclothing":
+            MessageLookupByLibrary.simpleMessage("ملابس الاطفال"),
         "City": MessageLookupByLibrary.simpleMessage("المدينة"),
+        "Discounts": MessageLookupByLibrary.simpleMessage("الخصومات"),
         "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts":
             MessageLookupByLibrary.simpleMessage(
                 "إستمتع بتجربة تسوق مميزة من خلال مجموعة كبيرة و متنوعة من المنتجات"),
@@ -32,6 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("يبدو انك مستخدم جديدًا معنا"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("فروعنا"),
         "Ourown": MessageLookupByLibrary.simpleMessage(" الخاص بنا"),
+        "Perfumes": MessageLookupByLibrary.simpleMessage("العطور"),
         "PleaseentertheOTPverificationcode":
             MessageLookupByLibrary.simpleMessage("الرجاء أدخال رمز التحقق"),
         "Pleaseenterthefollowingdata": MessageLookupByLibrary.simpleMessage(
@@ -40,11 +44,13 @@ class MessageLookup extends MessageLookupByLibrary {
             " سياسة الخصوصية و شروط الاستخدام"),
         "ResendOTP": MessageLookupByLibrary.simpleMessage("إرسل مرة أخرى"),
         "Sections": MessageLookupByLibrary.simpleMessage("الاقسام"),
+        "Showmore": MessageLookupByLibrary.simpleMessage("عرض المزيد"),
         "Youcansearchfromhere":
             MessageLookupByLibrary.simpleMessage("يمكنك البحث من هنا"),
         "Yourverificationcodehasbeensentto":
             MessageLookupByLibrary.simpleMessage(
                 "تم إرسال رمز التحقق الخاص بك إلى"),
+        "accessories": MessageLookupByLibrary.simpleMessage("الاكسسوارات"),
         "addExercise": MessageLookupByLibrary.simpleMessage("إضافة تمرين"),
         "addMember": MessageLookupByLibrary.simpleMessage("إضافة عضو"),
         "addNewExercise":
@@ -60,6 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "areYouSureYouWantToLogOut": MessageLookupByLibrary.simpleMessage(
             "هل أنت متأكد أنك تريد تسجيل الخروج؟"),
         "awayFromYou": MessageLookupByLibrary.simpleMessage("بعيد عنك"),
+        "babywear": MessageLookupByLibrary.simpleMessage("ملابس الاطفال"),
         "backToLogin":
             MessageLookupByLibrary.simpleMessage("العودة إلى تسجيل الدخول"),
         "benchPress": MessageLookupByLibrary.simpleMessage("تمرين الضغط"),
@@ -153,6 +160,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "lowCapacity": MessageLookupByLibrary.simpleMessage("سعة منخفضة"),
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "mediumCapacity": MessageLookupByLibrary.simpleMessage("سعة متوسطة"),
+        "menswear": MessageLookupByLibrary.simpleMessage("ملابس رجالية"),
         "minutes": MessageLookupByLibrary.simpleMessage("دقائق"),
         "monthly": MessageLookupByLibrary.simpleMessage("شهري"),
         "myQrCode": MessageLookupByLibrary.simpleMessage(
@@ -245,6 +253,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "silver": MessageLookupByLibrary.simpleMessage("فضي"),
         "specialSymbolsSuchAs": MessageLookupByLibrary.simpleMessage(
             "رموز خاصة مثل (!, @, #, \$, %, ^, &, *)"),
+        "sportswear": MessageLookupByLibrary.simpleMessage("ملابس رياضية"),
         "startDate": MessageLookupByLibrary.simpleMessage("تاريخ البدء"),
         "successfully": MessageLookupByLibrary.simpleMessage("بنجاح 🎉"),
         "theCodeWillBeResentAfter":
