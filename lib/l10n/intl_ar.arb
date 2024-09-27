@@ -362,7 +362,9 @@
 "accessories": "الاكسسوارات",
 "@accessories":{},
 "Discounts": "الخصومات",
-"@Discounts":{}
+"@Discounts":{},
+"bestsellers":"الاكثر مبيعاً",
+"@bestsellers":{}
 
 
 

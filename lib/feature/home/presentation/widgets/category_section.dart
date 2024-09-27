@@ -26,31 +26,33 @@ class CategorySection extends StatelessWidget {
       S.of(context).sportswear,
       S.of(context).womenswear,
     ];
-    return SizedBox(
-      width: double.infinity,
-      height: MediaQuery.of(context).size.height * .3,
-      child: GridView.builder(
-        shrinkWrap: false,
-        physics: const NeverScrollableScrollPhysics(),
-        itemCount: 6,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
+    return SliverToBoxAdapter(
+      child: SizedBox(
+        width: double.infinity,
+        height: MediaQuery.of(context).size.height * .3,
+        child: GridView.builder(
+          shrinkWrap: false,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: 6,
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+          ),
+          itemBuilder: (context, index) {
+            return Column(
+              children: [
+                Image.asset(
+                  categories[index],
+                  width: 74.w,
+                  height: 74.h,
+                ),
+                Text(
+                  categoriesName[index],
+                  style: AppTextStyle.medium15,
+                )
+              ],
+            );
+          },
         ),
-        itemBuilder: (context, index) {
-          return Column(
-            children: [
-              Image.asset(
-                categories[index],
-                width: 74.w,
-                height: 74.h,
-              ),
-              Text(
-                categoriesName[index],
-                style: AppTextStyle.medium15,
-              )
-            ],
-          );
-        },
       ),
     );
   }

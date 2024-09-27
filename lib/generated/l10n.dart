@@ -1973,6 +1973,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Bestsellers`
+  String get bestsellers {
+    return Intl.message(
+      'Bestsellers',
+      name: 'bestsellers',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

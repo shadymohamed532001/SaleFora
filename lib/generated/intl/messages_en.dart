@@ -73,6 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "back": MessageLookupByLibrary.simpleMessage("Back"),
         "backToLogin": MessageLookupByLibrary.simpleMessage("Back to Login"),
         "benchPress": MessageLookupByLibrary.simpleMessage("Bench press"),
+        "bestsellers": MessageLookupByLibrary.simpleMessage("Bestsellers"),
         "biceps": MessageLookupByLibrary.simpleMessage("biceps"),
         "birthDate": MessageLookupByLibrary.simpleMessage("Birth Date"),
         "birthDateCannotBeEmpty":

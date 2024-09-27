@@ -70,6 +70,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "backToLogin":
             MessageLookupByLibrary.simpleMessage("العودة إلى تسجيل الدخول"),
         "benchPress": MessageLookupByLibrary.simpleMessage("تمرين الضغط"),
+        "bestsellers": MessageLookupByLibrary.simpleMessage("الاكثر مبيعاً"),
         "birthDate": MessageLookupByLibrary.simpleMessage("تاريخ الميلاد"),
         "branch": MessageLookupByLibrary.simpleMessage("الفرع"),
         "calories": MessageLookupByLibrary.simpleMessage("السعرات الحرارية"),

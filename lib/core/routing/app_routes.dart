@@ -16,8 +16,8 @@ class AppRoutes {
       case Routes.initialRoute:
         return MaterialPageRoute(
           builder: (context) => BlocProvider(
-            create: (context) => LoginCubit(),
-            child: const LoginView(),
+            create: (context) => serviceLocator.get<LayoutCubit>(),
+            child: const LayOutViews(),
           ),
         );
 

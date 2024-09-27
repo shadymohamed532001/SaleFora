@@ -137,7 +137,10 @@ class LoginNewUserBody extends StatelessWidget {
                   scale: 0.5.sp,
                   child: SvgPicture.asset(
                     AppImageAssets.roadMap,
-                    color: AppColors.gray7Color,
+                    colorFilter: const ColorFilter.mode(
+                      AppColors.gray7Color,
+                      BlendMode.srcIn,
+                    ),
                   ),
                 ),
               ),

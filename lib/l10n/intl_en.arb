@@ -383,8 +383,9 @@
     "accessories":"Accessories",
     "@accessories":{},
     "Discounts":"Discounts",
-    "@Discounts":{}
-
+    "@Discounts":{},
+    "bestsellers":"Bestsellers",
+    "@bestsellers":{}
 
   
   

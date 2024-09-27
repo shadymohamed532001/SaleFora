@@ -13,10 +13,11 @@ void main() async {
   ApiServices.init();
   await LocalServices.init();
   ServiceLocator().setUpServiceLocator();
-  runApp(
-    DevicePreview(
-      enabled: true,
-      builder: (context) => const SaleForaApp(),
-    ),
-  );
+  runApp(const SaleForaApp());
+  // runApp(
+  //   DevicePreview(
+  //     enabled: true,
+  //     builder: (context) => const SaleForaApp(),
+  //   ),
+  // );
 }

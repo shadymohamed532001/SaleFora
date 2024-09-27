@@ -12,15 +12,17 @@ class HomeSearchFiled extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24.w),
-      child: AppTextFormFiled(
-        hintText: S.of(context).Youcansearchfromhere,
-        obscureText: true,
-        suffixIcon: Transform.scale(
-          scale: .5.sp,
-          child: SvgPicture.asset(
-            AppImageAssets.searchNormal,
+    return SliverToBoxAdapter(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 24.w),
+        child: AppTextFormFiled(
+          hintText: S.of(context).Youcansearchfromhere,
+          obscureText: true,
+          suffixIcon: Transform.scale(
+            scale: .5.sp,
+            child: SvgPicture.asset(
+              AppImageAssets.searchNormal,
+            ),
           ),
         ),
       ),
