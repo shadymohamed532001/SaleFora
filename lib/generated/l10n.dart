@@ -1863,6 +1863,176 @@ class S {
       args: [],
     );
   }
+
+  /// `You can search from here`
+  String get Youcansearchfromhere {
+    return Intl.message(
+      'You can search from here',
+      name: 'Youcansearchfromhere',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sections`
+  String get Sections {
+    return Intl.message(
+      'Sections',
+      name: 'Sections',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Show more`
+  String get Showmore {
+    return Intl.message(
+      'Show more',
+      name: 'Showmore',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Menswear`
+  String get menswear {
+    return Intl.message(
+      'Menswear',
+      name: 'menswear',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Womenswear`
+  String get womenswear {
+    return Intl.message(
+      'Womenswear',
+      name: 'womenswear',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Childrenclothing`
+  String get Childrenclothing {
+    return Intl.message(
+      'Childrenclothing',
+      name: 'Childrenclothing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Babywear`
+  String get babywear {
+    return Intl.message(
+      'Babywear',
+      name: 'babywear',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sportswear`
+  String get sportswear {
+    return Intl.message(
+      'Sportswear',
+      name: 'sportswear',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Perfumes`
+  String get Perfumes {
+    return Intl.message(
+      'Perfumes',
+      name: 'Perfumes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Accessories`
+  String get accessories {
+    return Intl.message(
+      'Accessories',
+      name: 'accessories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discounts`
+  String get Discounts {
+    return Intl.message(
+      'Discounts',
+      name: 'Discounts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bestsellers`
+  String get bestsellers {
+    return Intl.message(
+      'Bestsellers',
+      name: 'bestsellers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ForYou`
+  String get ForYou {
+    return Intl.message(
+      'ForYou',
+      name: 'ForYou',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favorites`
+  String get favorites {
+    return Intl.message(
+      'Favorites',
+      name: 'favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Orders`
+  String get orderhistory {
+    return Intl.message(
+      'Orders',
+      name: 'orderhistory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Account`
+  String get Acount {
+    return Intl.message(
+      'Account',
+      name: 'Acount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `More`
+  String get More {
+    return Intl.message(
+      'More',
+      name: 'More',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -64,7 +64,7 @@ class OtpViewBody extends StatelessWidget {
             ),
             const SendAgainWidget(),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.42,
+              height: MediaQuery.of(context).size.height * 0.35,
             ),
             CustomBottom(
               onPressed: () {

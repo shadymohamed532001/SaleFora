@@ -22,16 +22,23 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Acount": MessageLookupByLibrary.simpleMessage("Account"),
         "Agreeto": MessageLookupByLibrary.simpleMessage("Agree to "),
+        "Childrenclothing":
+            MessageLookupByLibrary.simpleMessage("Childrenclothing"),
         "City": MessageLookupByLibrary.simpleMessage("City"),
+        "Discounts": MessageLookupByLibrary.simpleMessage("Discounts"),
         "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts":
             MessageLookupByLibrary.simpleMessage(
                 "Enjoy a unique shopping experience through a large and diverse range of products"),
+        "ForYou": MessageLookupByLibrary.simpleMessage("ForYou"),
         "In": MessageLookupByLibrary.simpleMessage("In"),
         "Itseemsthatyouareanewuserwithus": MessageLookupByLibrary.simpleMessage(
             "It seems that you are a new user with us"),
+        "More": MessageLookupByLibrary.simpleMessage("More"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("Our Branches"),
         "Ourown": MessageLookupByLibrary.simpleMessage("Ourown"),
+        "Perfumes": MessageLookupByLibrary.simpleMessage("Perfumes"),
         "PleaseentertheOTPverificationcode":
             MessageLookupByLibrary.simpleMessage(
                 "Please enter the OTP verification code"),
@@ -40,9 +47,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "PrivacyPolicyandTermsofUse": MessageLookupByLibrary.simpleMessage(
             "Privacy Policy and Terms of Use "),
         "ResendOTP": MessageLookupByLibrary.simpleMessage("Send again"),
+        "Sections": MessageLookupByLibrary.simpleMessage("Sections"),
+        "Showmore": MessageLookupByLibrary.simpleMessage("Show more"),
+        "Youcansearchfromhere":
+            MessageLookupByLibrary.simpleMessage("You can search from here"),
         "Yourverificationcodehasbeensentto":
             MessageLookupByLibrary.simpleMessage(
                 "Your verification code has been sent to"),
+        "accessories": MessageLookupByLibrary.simpleMessage("Accessories"),
         "addExercise": MessageLookupByLibrary.simpleMessage("Add Exercise"),
         "addMember": MessageLookupByLibrary.simpleMessage("Add member"),
         "addNewExercise":
@@ -60,9 +72,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "areYouSureYouWantToLogOut": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to logout?"),
         "awayFromYou": MessageLookupByLibrary.simpleMessage("Away From You"),
+        "babywear": MessageLookupByLibrary.simpleMessage("Babywear"),
         "back": MessageLookupByLibrary.simpleMessage("Back"),
         "backToLogin": MessageLookupByLibrary.simpleMessage("Back to Login"),
         "benchPress": MessageLookupByLibrary.simpleMessage("Bench press"),
+        "bestsellers": MessageLookupByLibrary.simpleMessage("Bestsellers"),
         "biceps": MessageLookupByLibrary.simpleMessage("biceps"),
         "birthDate": MessageLookupByLibrary.simpleMessage("Birth Date"),
         "birthDateCannotBeEmpty":
@@ -130,6 +144,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "equipmentUsages":
             MessageLookupByLibrary.simpleMessage("Equipment Usages"),
         "exercises": MessageLookupByLibrary.simpleMessage("Exercises"),
+        "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "fitnessTailoredJustForYou": MessageLookupByLibrary.simpleMessage(
             "Fitness tailored just for you"),
@@ -163,6 +178,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "mediumCapacity":
             MessageLookupByLibrary.simpleMessage("Medium capacity"),
+        "menswear": MessageLookupByLibrary.simpleMessage("Menswear"),
         "minutes": MessageLookupByLibrary.simpleMessage("Minutes"),
         "monthly": MessageLookupByLibrary.simpleMessage("Monthly"),
         "myQrCode": MessageLookupByLibrary.simpleMessage("My Qr Code"),
@@ -178,6 +194,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "oneConsultationSessionWithAPersonalTrainerWhenYouSignUpForTheFirstTime":
             MessageLookupByLibrary.simpleMessage(
                 "One consultation session with a personal trainer when you sign up for the first time"),
+        "orderhistory": MessageLookupByLibrary.simpleMessage("Orders"),
         "ourCollection": MessageLookupByLibrary.simpleMessage("Our Collection"),
         "ourMembers": MessageLookupByLibrary.simpleMessage("Our members"),
         "out": MessageLookupByLibrary.simpleMessage("Out"),
@@ -258,6 +275,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "silver": MessageLookupByLibrary.simpleMessage("Silver"),
         "specialSymbolsSuchAs": MessageLookupByLibrary.simpleMessage(
             "Special symbols such as (!, @, #, \$, %, ^, &, *)"),
+        "sportswear": MessageLookupByLibrary.simpleMessage("Sportswear"),
         "startDate": MessageLookupByLibrary.simpleMessage("Start Date"),
         "startDateCannotBeEmpty":
             MessageLookupByLibrary.simpleMessage("Start Date cannot be empty"),
@@ -299,6 +317,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "warning": MessageLookupByLibrary.simpleMessage("Warning"),
         "whatsAppNumber":
             MessageLookupByLibrary.simpleMessage("WhatsApp Number"),
+        "womenswear": MessageLookupByLibrary.simpleMessage("Womenswear"),
         "yourGymAttendanceDate":
             MessageLookupByLibrary.simpleMessage("Your gym attendance date"),
         "yourPhoneNumber":

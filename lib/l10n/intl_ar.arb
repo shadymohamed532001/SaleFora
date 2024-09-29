@@ -118,7 +118,7 @@
 "@sessionCompleted":{},
 "sessionRemaining":"الجلسة المتبقية",
 "@sessionRemaining":{},
-"home":"الصفحة الرئيسية",
+"home":"الرئيسية",
 "@home":{},
 "history":"التاريخ",
 "@history":{},
@@ -341,7 +341,46 @@
 "City":"المدينة",
 "@City":{},
 "email":"البريد الالكتروني",
-"@email":{}
+"@email":{},
+"Youcansearchfromhere" : "يمكنك البحث من هنا",
+"@Youcansearchfromhere" : {},
+"Sections":"الاقسام",
+"@Sections":{},
+"Showmore": "عرض المزيد",
+"@Showmore":{},
+"menswear": "ملابس رجالية",
+"@menswear":{},
+"womenwear": "ملابس نساء",
+"@womenwear":{},
+"Childrenclothing": "ملابس الاطفال",
+"@Childrenclothing":{},
+"babywear": "ملابس الاطفال",
+"sportswear": "ملابس رياضية",
+"@sportswear":{},
+"Perfumes": "العطور",
+"@Perfumes":{},
+"accessories": "الاكسسوارات",
+"@accessories":{},
+"Discounts": "الخصومات",
+"@Discounts":{},
+"bestsellers":"الاكثر مبيعاً",
+"@bestsellers":{},
+"ForYou":"تم إختيارة لك",
+"@ForYou":{},
+"favorites":"المفضلة",
+"@favorites":{},
+"orderhistory": " طلباتى",
+"@orderhistory":{},
+"Acount":"حسابى",
+"@Acount":{},
+"More":"المزيد",
+"@More":{}
+
+
+
+
+
+
 
 
 
