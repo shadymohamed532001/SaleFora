@@ -364,7 +364,19 @@
 "Discounts": "الخصومات",
 "@Discounts":{},
 "bestsellers":"الاكثر مبيعاً",
-"@bestsellers":{}
+"@bestsellers":{},
+"ForYou":"تم إختيارة لك",
+"@ForYou":{},
+"favorites":"المفضلة",
+"@favorites":{},
+"orderhistory": " طلباتى",
+"@orderhistory":{},
+"Acount":"حسابى",
+"@Acount":{},
+"More":"المزيد",
+"@More":{}
+
+
 
 
 

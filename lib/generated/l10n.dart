@@ -1983,6 +1983,56 @@ class S {
       args: [],
     );
   }
+
+  /// `ForYou`
+  String get ForYou {
+    return Intl.message(
+      'ForYou',
+      name: 'ForYou',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favorites`
+  String get favorites {
+    return Intl.message(
+      'Favorites',
+      name: 'favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Orders`
+  String get orderhistory {
+    return Intl.message(
+      'Orders',
+      name: 'orderhistory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Account`
+  String get Acount {
+    return Intl.message(
+      'Account',
+      name: 'Acount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `More`
+  String get More {
+    return Intl.message(
+      'More',
+      name: 'More',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

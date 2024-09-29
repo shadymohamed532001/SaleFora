@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:salefora/core/themaing/app_colors.dart';
-import 'package:salefora/feature/layout/presentation/manager/cubit/layout_cubit.dart';
+import 'package:salefora/feature/layout/logic/cubit/layout_cubit.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({

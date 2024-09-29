@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:salefora/feature/layout/presentation/manager/cubit/layout_cubit.dart';
+import 'package:salefora/feature/layout/logic/cubit/layout_cubit.dart';
 
 class LayOutViewBody extends StatelessWidget {
   const LayOutViewBody({super.key});

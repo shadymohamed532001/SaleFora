@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:salefora/core/themaing/app_image_assets.dart';
 import 'package:salefora/feature/home/presentation/widgets/banner_slider.dart';
 import 'package:salefora/feature/home/presentation/widgets/best_sellers_grid_view.dart';
+import 'package:salefora/feature/home/presentation/widgets/category_and_show_more_and_list_of_image.dart';
 import 'package:salefora/feature/home/presentation/widgets/category_section.dart';
+import 'package:salefora/feature/home/presentation/widgets/custom_banner.dart';
 import 'package:salefora/feature/home/presentation/widgets/discount_banner.dart';
 import 'package:salefora/feature/home/presentation/widgets/discount_banner_list_view.dart';
 import 'package:salefora/feature/home/presentation/widgets/discount_card_slider.dart';
-import 'package:salefora/feature/home/presentation/widgets/discount_list_view.dart';
+import 'package:salefora/feature/home/presentation/widgets/for_you_grid_view.dart';
 import 'package:salefora/feature/home/presentation/widgets/home_search_filed.dart';
 import 'package:salefora/feature/home/presentation/widgets/tittle_and_show_more_widget.dart';
 import 'package:salefora/generated/l10n.dart';
@@ -46,26 +47,20 @@ class UserHomeViewBody extends StatelessWidget {
         SliverToBoxAdapter(
           child: SizedBox(height: 8.h),
         ),
-        SliverToBoxAdapter(
-          child: SizedBox(
-            height: 150.h,
-            width: double.infinity,
-            child: Image.asset(
-              AppImageAssets.banner2,
-              fit: BoxFit.cover,
-              width: double.infinity,
-            ),
-          ),
-        ),
-        TitleAndShowMoreWidget(
-          tittle: S.of(context).Discounts,
+        const CustomBanner(
+          heightofBanner: 150,
+          customBannerImage: AppImageAssets.banner2,
         ),
         SliverToBoxAdapter(
-          child: SizedBox(height: 16.h),
-        ),
-        const DiscountListView(
-          imageItem: AppImageAssets.banner1,
-          itemName: '30 ريس',
+          child: CategoryAndShowMoreAndListOfImage(
+              categoryName: S.of(context).Discounts,
+              imagesNmae: const [
+                'assets/images/Rectangle 1435.png',
+                'assets/images/Rectangle 1437.png',
+                'assets/images/product photo.png',
+                'assets/images/Rectangle 1437.png',
+                'assets/images/product photo.png',
+              ]),
         ),
         SliverToBoxAdapter(
           child: SizedBox(height: 24.h),
@@ -93,8 +88,104 @@ class UserHomeViewBody extends StatelessWidget {
         ),
         const BestsellersGridView(),
         SliverToBoxAdapter(
+          child: SizedBox(height: 32.h),
+        ),
+        const CustomBanner(
+          heightofBanner: 100,
+          customBannerImage: 'assets/images/Frame 427319369.png',
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(height: 32.h),
+        ),
+        SliverToBoxAdapter(
+          child: CategoryAndShowMoreAndListOfImage(
+            categoryName: S.of(context).Perfumes,
+            imagesNmae: const [
+              'assets/images/Rectangle 1435.png',
+              'assets/images/Rectangle 1437.png',
+              'assets/images/product photo.png',
+              'assets/images/Rectangle 1437.png',
+              'assets/images/product photo.png',
+            ],
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(height: 32.h),
+        ),
+        SliverToBoxAdapter(
+          child: CategoryAndShowMoreAndListOfImage(
+            categoryName: S.of(context).menswear,
+            imagesNmae: const [
+              'assets/images/Rectangle 1435.png',
+              'assets/images/Rectangle 1437.png',
+              'assets/images/product photo.png',
+              'assets/images/Rectangle 1437.png',
+              'assets/images/product photo.png',
+            ],
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(height: 32.h),
+        ),
+        const CustomBanner(
+          heightofBanner: 150,
+          customBannerImage: 'assets/images/Frame 202.png',
+        ),
+        SliverToBoxAdapter(
           child: SizedBox(height: 24.h),
         ),
+        TitleAndShowMoreWidget(
+          tittle: S.of(context).ForYou,
+        ),
+        const ForYouGridView(),
+        SliverToBoxAdapter(
+          child: SizedBox(height: 32.h),
+        ),
+        const CustomBanner(
+          heightofBanner: 260,
+          customBannerImage: 'assets/images/Frame 427319376.png',
+        ),
+        SliverToBoxAdapter(
+          child: CategoryAndShowMoreAndListOfImage(
+            categoryName: S.of(context).sportswear,
+            imagesNmae: const [
+              'assets/images/Rectangle 1435.png',
+              'assets/images/Rectangle 1437.png',
+              'assets/images/product photo.png',
+              'assets/images/Rectangle 1437.png',
+              'assets/images/product photo.png',
+            ],
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(height: 32.h),
+        ),
+        SliverToBoxAdapter(
+          child: CategoryAndShowMoreAndListOfImage(
+            categoryName: S.of(context).Childrenclothing,
+            imagesNmae: const [
+              'assets/images/Rectangle 1435.png',
+              'assets/images/Rectangle 1437.png',
+              'assets/images/product photo.png',
+              'assets/images/Rectangle 1437.png',
+              'assets/images/product photo.png',
+            ],
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(height: 32.h),
+        ),
+        const DiscountCardSlider(
+          images: [
+            'assets/images/product photo.png',
+            'assets/images/product photo.png',
+            'assets/images/product photo.png',
+          ],
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(height: 16.h),
+        ),
+        const DiscountBannerListView(),
       ],
     );
   }

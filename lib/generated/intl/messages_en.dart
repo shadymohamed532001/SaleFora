@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Acount": MessageLookupByLibrary.simpleMessage("Account"),
         "Agreeto": MessageLookupByLibrary.simpleMessage("Agree to "),
         "Childrenclothing":
             MessageLookupByLibrary.simpleMessage("Childrenclothing"),
@@ -30,9 +31,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts":
             MessageLookupByLibrary.simpleMessage(
                 "Enjoy a unique shopping experience through a large and diverse range of products"),
+        "ForYou": MessageLookupByLibrary.simpleMessage("ForYou"),
         "In": MessageLookupByLibrary.simpleMessage("In"),
         "Itseemsthatyouareanewuserwithus": MessageLookupByLibrary.simpleMessage(
             "It seems that you are a new user with us"),
+        "More": MessageLookupByLibrary.simpleMessage("More"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("Our Branches"),
         "Ourown": MessageLookupByLibrary.simpleMessage("Ourown"),
         "Perfumes": MessageLookupByLibrary.simpleMessage("Perfumes"),
@@ -141,6 +144,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "equipmentUsages":
             MessageLookupByLibrary.simpleMessage("Equipment Usages"),
         "exercises": MessageLookupByLibrary.simpleMessage("Exercises"),
+        "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "fitnessTailoredJustForYou": MessageLookupByLibrary.simpleMessage(
             "Fitness tailored just for you"),
@@ -190,6 +194,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "oneConsultationSessionWithAPersonalTrainerWhenYouSignUpForTheFirstTime":
             MessageLookupByLibrary.simpleMessage(
                 "One consultation session with a personal trainer when you sign up for the first time"),
+        "orderhistory": MessageLookupByLibrary.simpleMessage("Orders"),
         "ourCollection": MessageLookupByLibrary.simpleMessage("Our Collection"),
         "ourMembers": MessageLookupByLibrary.simpleMessage("Our members"),
         "out": MessageLookupByLibrary.simpleMessage("Out"),

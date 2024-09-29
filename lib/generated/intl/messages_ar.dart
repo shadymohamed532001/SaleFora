@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Acount": MessageLookupByLibrary.simpleMessage("حسابى"),
         "Agreeto": MessageLookupByLibrary.simpleMessage(" أوافق على"),
         "Childrenclothing":
             MessageLookupByLibrary.simpleMessage("ملابس الاطفال"),
@@ -30,9 +31,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "Enjoyauniqueshoppingexperiencethroughalargeanddiverserangeofproducts":
             MessageLookupByLibrary.simpleMessage(
                 "إستمتع بتجربة تسوق مميزة من خلال مجموعة كبيرة و متنوعة من المنتجات"),
+        "ForYou": MessageLookupByLibrary.simpleMessage("تم إختيارة لك"),
         "In": MessageLookupByLibrary.simpleMessage("داخل"),
         "Itseemsthatyouareanewuserwithus":
             MessageLookupByLibrary.simpleMessage("يبدو انك مستخدم جديدًا معنا"),
+        "More": MessageLookupByLibrary.simpleMessage("المزيد"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("فروعنا"),
         "Ourown": MessageLookupByLibrary.simpleMessage(" الخاص بنا"),
         "Perfumes": MessageLookupByLibrary.simpleMessage("العطور"),
@@ -131,6 +134,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "equipmentUsages":
             MessageLookupByLibrary.simpleMessage("استخدام المعدات"),
         "exercises": MessageLookupByLibrary.simpleMessage("التمارين"),
+        "favorites": MessageLookupByLibrary.simpleMessage("المفضلة"),
         "female": MessageLookupByLibrary.simpleMessage("أنثى"),
         "fitnessTailoredJustForYou": MessageLookupByLibrary.simpleMessage(
             "اللياقة البدنية مصممة خصيصًا لك"),
@@ -178,6 +182,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "oneConsultationSessionWithAPersonalTrainerWhenYouSignUpForTheFirstTime":
             MessageLookupByLibrary.simpleMessage(
                 "جلسة استشارة واحدة مع مدرب شخصي عند التسجيل لأول مرة"),
+        "orderhistory": MessageLookupByLibrary.simpleMessage(" طلباتى"),
         "ourCollection": MessageLookupByLibrary.simpleMessage("مجموعتنا"),
         "ourMembers": MessageLookupByLibrary.simpleMessage("أعضاؤنا"),
         "out": MessageLookupByLibrary.simpleMessage("خارج"),

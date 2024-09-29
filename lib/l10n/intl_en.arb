@@ -385,7 +385,19 @@
     "Discounts":"Discounts",
     "@Discounts":{},
     "bestsellers":"Bestsellers",
-    "@bestsellers":{}
+    "@bestsellers":{},
+    "ForYou":"ForYou",
+    "@ForYou":{},
+    "favorites":"Favorites",
+    "@favorites":{},
+    "orderhistory":"Orders",
+    "@orderhistory":{},
+    "Acount":"Account",
+    "@Acount":{},
+    "More":"More",
+    "@More":{}
+  
+
 
   
   

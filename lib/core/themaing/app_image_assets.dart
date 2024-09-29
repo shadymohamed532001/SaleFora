@@ -23,4 +23,8 @@ class AppImageAssets {
   static const String perfumes = 'assets/images/perfumes.png';
   static const String banner1 = 'assets/images/banner_1.png';
   static const String banner2 = 'assets/images/bannar_2.png';
+  static const String listIcon = 'assets/svg/list_icon.svg';
+  static const String gridIcon = "assets/svg/grid_icon.svg";
+  static const String starIcon = "assets/svg/Star.svg";
+  static const String saleforaPrime = "assets/svg/salefora_prime.svg";
 }

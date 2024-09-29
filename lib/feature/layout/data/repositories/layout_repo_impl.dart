@@ -7,8 +7,9 @@ import 'package:salefora/core/themaing/app_image_assets.dart';
 import 'package:salefora/feature/home/presentation/views/user_home_view.dart';
 import 'package:salefora/feature/layout/data/models/change_index_params.dart';
 import 'package:salefora/feature/layout/data/repositories/layout_repo.dart';
-import 'package:salefora/feature/layout/presentation/manager/cubit/layout_cubit.dart';
+import 'package:salefora/feature/layout/logic/cubit/layout_cubit.dart';
 import '../../../../generated/l10n.dart';
+import '../../../favorites_tab/presentation/views/favorites_view.dart';
 
 class LayoutRepoImpl extends LayOutRepo {
   LayoutRepoImpl();
@@ -27,7 +28,7 @@ class LayoutRepoImpl extends LayOutRepo {
   List<Widget> getBody() {
     return const <Widget>[
       UserHomeView(),
-      UserHomeView(),
+      FavoritesView(),
       UserHomeView(),
       UserHomeView(),
       UserHomeView(),
@@ -65,7 +66,7 @@ class LayoutRepoImpl extends LayOutRepo {
               ),
             ),
           ),
-          label: S.of(context).history,
+          label: S.of(context).favorites,
         ),
         BottomNavigationBarItem(
           icon: Transform.scale(
@@ -80,7 +81,7 @@ class LayoutRepoImpl extends LayOutRepo {
               ),
             ),
           ),
-          label: S.of(context).exercises,
+          label: S.of(context).orderhistory,
         ),
         BottomNavigationBarItem(
           icon: Transform.scale(
@@ -95,7 +96,7 @@ class LayoutRepoImpl extends LayOutRepo {
               ),
             ),
           ),
-          label: S.of(context).settings,
+          label: S.of(context).Acount,
         ),
         BottomNavigationBarItem(
           icon: Transform.scale(
@@ -110,7 +111,7 @@ class LayoutRepoImpl extends LayOutRepo {
               ),
             ),
           ),
-          label: S.of(context).settings,
+          label: S.of(context).More,
         ),
       ];
 }
