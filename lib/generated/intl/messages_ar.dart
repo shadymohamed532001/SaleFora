@@ -36,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Itseemsthatyouareanewuserwithus":
             MessageLookupByLibrary.simpleMessage("يبدو انك مستخدم جديدًا معنا"),
         "More": MessageLookupByLibrary.simpleMessage("المزيد"),
+        "Nofevories": MessageLookupByLibrary.simpleMessage(
+            "لم تقم بإضافة أى منتجات لقائمة المفضلة"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("فروعنا"),
         "Ourown": MessageLookupByLibrary.simpleMessage(" الخاص بنا"),
         "Perfumes": MessageLookupByLibrary.simpleMessage("العطور"),

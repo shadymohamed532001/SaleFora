@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:salefora/core/themaing/app_colors.dart';
 import 'package:salefora/core/themaing/app_image_assets.dart';
 import 'package:salefora/core/themaing/app_text_styles.dart';
 import 'package:salefora/core/widgets/app_text_formfield.dart';
-import 'package:salefora/feature/favorites_tab/logic/cubit/favourite_cubit.dart';
-import 'package:salefora/feature/favorites_tab/presentation/widgets/favorites_grid_view.dart';
-import 'package:salefora/feature/favorites_tab/presentation/widgets/favorites_list_view.dart';
+import 'package:salefora/feature/favorites/logic/cubit/favourite_cubit.dart';
+import 'package:salefora/feature/favorites/presentation/widgets/favorites_grid_view.dart';
+import 'package:salefora/feature/favorites/presentation/widgets/favorites_list_view.dart';
 import 'package:salefora/generated/l10n.dart';
 
 class FavoritesViewBody extends StatelessWidget {
@@ -28,7 +29,7 @@ class FavoritesViewBody extends StatelessWidget {
                   S.of(context).favorites,
                   style: AppTextStyle.bold24,
                 ),
-                backgroundColor: Colors.white,
+                backgroundColor: Colors.transparent,
               ),
               SliverToBoxAdapter(
                 child: SizedBox(
@@ -70,12 +71,50 @@ class FavoritesViewBody extends StatelessWidget {
               ),
               SliverToBoxAdapter(
                 child: SizedBox(
-                  height: 24.h,
+                  height: favCubit.isFavouriteFound ? 100.h : 24.h,
                 ),
               ),
-              favCubit.isList
-                  ? const FavoritesGridView()
-                  : const FavoritesListView()
+              favCubit.isFavouriteFound
+                  ? SliverToBoxAdapter(
+                      child: Container(
+                        width: 342.w,
+                        height: 406.h,
+                        decoration: BoxDecoration(
+                          color: const Color(0xfffefefe),
+                          borderRadius: BorderRadius.circular(24),
+                          boxShadow: [
+                            BoxShadow(
+                              color: AppColors.gray6Color.withOpacity(0.3),
+                              offset: const Offset(0, 10),
+                              blurRadius: 20,
+                            ),
+                          ],
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SvgPicture.asset(
+                              AppImageAssets.bagWithLove,
+                              height: 100.h,
+                              width: 100.w,
+                            ),
+                            SizedBox(
+                              height: 8.h,
+                            ),
+                            Text(
+                              S.of(context).Nofevories,
+                              textAlign: TextAlign.center,
+                              style: AppTextStyle.bold14.copyWith(
+                                color: AppColors.gray2Color,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
+                  : favCubit.isList
+                      ? const FavoritesGridView()
+                      : const FavoritesListView()
             ],
           ),
         );

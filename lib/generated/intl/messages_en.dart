@@ -36,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Itseemsthatyouareanewuserwithus": MessageLookupByLibrary.simpleMessage(
             "It seems that you are a new user with us"),
         "More": MessageLookupByLibrary.simpleMessage("More"),
+        "Nofevories": MessageLookupByLibrary.simpleMessage(
+            "You have not added any products to your favorites list"),
         "OurBranches": MessageLookupByLibrary.simpleMessage("Our Branches"),
         "Ourown": MessageLookupByLibrary.simpleMessage("Ourown"),
         "Perfumes": MessageLookupByLibrary.simpleMessage("Perfumes"),

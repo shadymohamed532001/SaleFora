@@ -395,7 +395,9 @@
     "Acount":"Account",
     "@Acount":{},
     "More":"More",
-    "@More":{}
+    "@More":{},
+    "Nofevories":"You have not added any products to your favorites list",
+    "@Nofevories":{}
   
 
 

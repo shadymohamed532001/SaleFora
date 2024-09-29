@@ -2033,6 +2033,16 @@ class S {
       args: [],
     );
   }
+
+  /// `You have not added any products to your favorites list`
+  String get Nofevories {
+    return Intl.message(
+      'You have not added any products to your favorites list',
+      name: 'Nofevories',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

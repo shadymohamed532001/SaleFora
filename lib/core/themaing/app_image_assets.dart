@@ -27,4 +27,6 @@ class AppImageAssets {
   static const String gridIcon = "assets/svg/grid_icon.svg";
   static const String starIcon = "assets/svg/Star.svg";
   static const String saleforaPrime = "assets/svg/salefora_prime.svg";
+
+  static const String bagWithLove = "assets/svg/bag_with_love.svg";
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:salefora/feature/favorites_tab/presentation/widgets/favorites_view_body.dart';
+import 'package:salefora/feature/favorites/presentation/widgets/favorites_view_body.dart';
 
 class FavoritesView extends StatelessWidget {
   const FavoritesView({super.key});
@@ -7,6 +7,7 @@ class FavoritesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Color(0xffF9F9F9),
       body: FavoritesViewBody(),
     );
   }
