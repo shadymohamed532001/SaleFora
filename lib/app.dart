@@ -6,7 +6,7 @@ import 'package:salefora/core/cubite/change_language_cubit.dart';
 import 'package:salefora/core/cubite/change_language_state.dart';
 import 'package:salefora/core/routing/app_routes.dart';
 import 'package:salefora/core/themaing/app_colors.dart';
-import 'package:salefora/feature/favorites_tab/logic/cubit/favourite_cubit.dart';
+import 'package:salefora/feature/favorites/logic/cubit/favourite_cubit.dart';
 
 import 'generated/l10n.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:salefora/feature/favorites_tab/presentation/widgets/favorites_grid_view_item.dart';
+import 'package:salefora/feature/favorites/presentation/widgets/favorites_grid_view_item.dart';
 
 class FavoritesGridView extends StatelessWidget {
   const FavoritesGridView({

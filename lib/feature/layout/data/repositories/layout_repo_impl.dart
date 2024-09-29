@@ -9,7 +9,7 @@ import 'package:salefora/feature/layout/data/models/change_index_params.dart';
 import 'package:salefora/feature/layout/data/repositories/layout_repo.dart';
 import 'package:salefora/feature/layout/logic/cubit/layout_cubit.dart';
 import '../../../../generated/l10n.dart';
-import '../../../favorites_tab/presentation/views/favorites_view.dart';
+import '../../../favorites/presentation/views/favorites_view.dart';
 
 class LayoutRepoImpl extends LayOutRepo {
   LayoutRepoImpl();
