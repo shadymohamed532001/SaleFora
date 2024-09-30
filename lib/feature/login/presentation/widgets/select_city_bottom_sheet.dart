@@ -10,18 +10,23 @@ import 'package:salefora/core/widgets/app_text_formfield.dart';
 class SelectCityBottomSheet {
   static void show({
     required BuildContext context,
+    required final Function(String) onCitySelected,
   }) {
     showModalBottomSheet<Widget>(
       context: context,
       backgroundColor: Colors.transparent,
       isScrollControlled: true,
-      builder: (context) => const CitySelectionBottomSheet(),
+      builder: (context) => CitySelectionBottomSheet(
+        onCitySelected: onCitySelected,
+      ),
     );
   }
 }
 
 class CitySelectionBottomSheet extends StatefulWidget {
-  const CitySelectionBottomSheet({super.key});
+  final Function(String) onCitySelected;
+
+  const CitySelectionBottomSheet({super.key, required this.onCitySelected});
 
   @override
   State<CitySelectionBottomSheet> createState() =>
@@ -162,7 +167,11 @@ class _CitySelectionBottomSheetState extends State<CitySelectionBottomSheet>
                                   color: AppColors.gray7Color,
                                 ),
                               ),
-                              onTap: () {},
+                              onTap: () {
+                                // Pass the selected city back to the parent widget
+                                widget.onCitySelected(cities[index]);
+                                Navigator.pop(context);
+                              },
                             ),
                             const Divider(),
                           ],

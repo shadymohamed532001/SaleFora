@@ -9,9 +9,8 @@ import 'package:salefora/core/themaing/app_image_assets.dart';
 import 'package:salefora/core/themaing/app_text_styles.dart';
 import 'package:salefora/core/widgets/app_bottom.dart';
 import 'package:salefora/core/widgets/app_text_formfield.dart';
+import 'package:salefora/feature/login/presentation/widgets/select_city_bottom_sheet.dart';
 import 'package:salefora/generated/l10n.dart';
-
-import '../widgets/select_city_bottom_sheet.dart';
 
 class LoginNewUser extends StatelessWidget {
   const LoginNewUser({super.key});
@@ -24,11 +23,18 @@ class LoginNewUser extends StatelessWidget {
   }
 }
 
-class LoginNewUserBody extends StatelessWidget {
+class LoginNewUserBody extends StatefulWidget {
   const LoginNewUserBody({super.key});
 
   @override
+  State<LoginNewUserBody> createState() => _LoginNewUserBodyState();
+}
+
+class _LoginNewUserBodyState extends State<LoginNewUserBody> {
+  @override
   Widget build(BuildContext context) {
+    String selectedCity = S.of(context).City;
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24),
       child: SingleChildScrollView(
@@ -68,15 +74,12 @@ class LoginNewUserBody extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             AppTextFormFiled(
-              // controller: cubit.iDController,
               fillColor: AppColors.gray10Color,
               prefixIcon: SizedBox(
                 width: 16,
                 height: 16,
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.only(
-                    end: 6,
-                  ),
+                  padding: const EdgeInsetsDirectional.only(end: 6),
                   child: Transform.scale(
                     scale: 0.5.sp,
                     child: SvgPicture.asset(
@@ -88,7 +91,7 @@ class LoginNewUserBody extends StatelessWidget {
               filled: true,
               hintText: S.of(context).name,
               obscureText: false,
-              keyboardType: TextInputType.phone,
+              keyboardType: TextInputType.text,
               maxLine: 1,
               validator: (text) {
                 return MyValidatorsHelper.idValidator(context, text);
@@ -111,7 +114,7 @@ class LoginNewUserBody extends StatelessWidget {
               filled: true,
               hintText: S.of(context).pleaseEnterEmail,
               obscureText: false,
-              keyboardType: TextInputType.phone,
+              keyboardType: TextInputType.emailAddress,
               maxLine: 1,
               validator: (text) {
                 return MyValidatorsHelper.idValidator(context, text);
@@ -125,13 +128,20 @@ class LoginNewUserBody extends StatelessWidget {
             const SizedBox(height: 8),
             AppTextFormFiled(
               readOnly: true,
-              hintText: S.of(context).City,
+              hintText: selectedCity, // Display the selected city
               fillColor: AppColors.gray10Color,
               filled: true,
               obscureText: false,
               prefixIcon: GestureDetector(
                 onTap: () {
-                  SelectCityBottomSheet.show(context: context);
+                  SelectCityBottomSheet.show(
+                    context: context,
+                    onCitySelected: (city) {
+                      setState(() {
+                        selectedCity = city; // Update the selected city
+                      });
+                    },
+                  );
                 },
                 child: Transform.scale(
                   scale: 0.5.sp,
@@ -144,7 +154,7 @@ class LoginNewUserBody extends StatelessWidget {
                   ),
                 ),
               ),
-              keyboardType: TextInputType.phone,
+              keyboardType: TextInputType.text,
               maxLine: 1,
               validator: (text) {
                 return MyValidatorsHelper.idValidator(context, text);
