@@ -8,8 +8,10 @@ class TitleAndShowMoreWidget extends StatelessWidget {
   const TitleAndShowMoreWidget({
     super.key,
     required this.tittle,
+    this.seeMoreOnPressed,
   });
   final String tittle;
+  final Function()? seeMoreOnPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class TitleAndShowMoreWidget extends StatelessWidget {
             ),
             const Spacer(),
             TextButton(
-              onPressed: () {},
+              onPressed: seeMoreOnPressed,
               child: Text(
                 S.of(context).Showmore,
                 style: AppTextStyle.bold16.copyWith(

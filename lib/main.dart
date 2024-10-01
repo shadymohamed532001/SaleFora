@@ -6,6 +6,7 @@ import 'package:salefora/bloc_observer.dart.dart';
 import 'package:salefora/core/helper/local_services.dart';
 import 'package:salefora/core/networking/api_services.dart';
 import 'package:salefora/service_locator.dart';
+// import 'package:device_preview/device_preview.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
