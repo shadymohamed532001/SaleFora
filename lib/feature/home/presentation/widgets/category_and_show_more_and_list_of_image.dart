@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:salefora/core/helper/naviagtion_extentaions.dart';
+import 'package:salefora/core/routing/routes.dart';
 import 'package:salefora/core/themaing/app_colors.dart';
 import 'package:salefora/core/themaing/app_text_styles.dart';
 import 'package:salefora/generated/l10n.dart';
@@ -27,7 +29,9 @@ class CategoryAndShowMoreAndListOfImage extends StatelessWidget {
               ),
               const Spacer(),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.navigateTo(routeName: Routes.sectionSearchViewRoute);
+                },
                 child: Text(
                   S.of(context).Showmore,
                   style: AppTextStyle.bold16.copyWith(

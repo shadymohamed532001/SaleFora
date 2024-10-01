@@ -22,6 +22,7 @@ class AppTextFormFiled extends StatelessWidget {
     this.decoration,
     this.readOnly = false,
     this.inputFormatters,
+    this.hintStyle,
   });
 
   final Function(String)? onChanged;
@@ -40,6 +41,7 @@ class AppTextFormFiled extends StatelessWidget {
   final InputDecoration? decoration;
   final bool readOnly;
   final List<TextInputFormatter>? inputFormatters;
+  final TextStyle? hintStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +98,7 @@ class AppTextFormFiled extends StatelessWidget {
               width: 1,
             ),
             hintText: hintText,
-            hintStyle:
+            hintStyle: hintStyle ??
                 AppTextStyle.medium16.copyWith(color: AppColors.gray4Color),
           ),
     );

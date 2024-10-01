@@ -8,6 +8,8 @@ import 'package:salefora/feature/login/logic/cubit/login_cubit.dart';
 import 'package:salefora/feature/login/presentation/views/login_new_user.dart';
 import 'package:salefora/feature/login/presentation/views/login_view.dart';
 import 'package:salefora/feature/login/presentation/views/otp_view.dart';
+import 'package:salefora/feature/sections/presentation/views/all_category_section.dart';
+import 'package:salefora/feature/sections/presentation/views/section_search_view.dart';
 import 'package:salefora/service_locator.dart';
 
 class AppRoutes {
@@ -50,6 +52,14 @@ class AppRoutes {
             create: (context) => LoginCubit(),
             child: const LoginNewUser(),
           ),
+        );
+      case Routes.allCategorySectionRoute:
+        return MaterialPageRoute(
+          builder: (context) => const AllCategorySection(),
+        );
+      case Routes.sectionSearchViewRoute:
+        return MaterialPageRoute(
+          builder: (context) => const SectionSearchView(),
         );
       default:
         return _unFoundRoute();
